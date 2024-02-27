@@ -1,0 +1,4 @@
+node_modules/
+
+# configurations
+mysql.js
