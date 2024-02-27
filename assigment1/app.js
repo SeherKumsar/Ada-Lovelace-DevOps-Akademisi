@@ -73,7 +73,7 @@ app.get("/students/delete/:id", (req, res) => {
   });
 });
 
-app.get("/students/average_grade/:id", (req, res) => {
+app.get("/students/average/:id", (req, res) => {
   dbConnection.query("SELECT (midterm_grade + final_grade) / 2 AS average_grade FROM students WHERE id = ?",
   [req.params.id], (err, results, fields) => {
     if (err) {
