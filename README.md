@@ -14,7 +14,7 @@
 - Projeyi çalıştırmak için:
 - `cd assigment1` komutu ile assigment1 klasörüne gidin.
 - `npm install` komutu ile gerekli paketleri yükleyin.
-- [mysql.js](./assigment1/helper/mysql/mysql.js) dosyasındaki password parametresine MySQL şifrenizi ekleyerek değiştirin.
+- [mysql.js](./assigment1/helper/mysql.js) dosyasındaki password parametresine MySQL şifrenizi ekleyerek değiştirin.
 - `nodemon app.js` komutu ile projeyi başlatın.
 - Tarayıcıda `http://localhost:3000` adresine gidin.
 - Öğrenci ekleme, silme ve listeleme işlemlerini gerçekleştirebilirsiniz.
