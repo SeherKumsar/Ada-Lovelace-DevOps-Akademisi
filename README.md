@@ -12,9 +12,10 @@
 - [assigment1](assigment1)
 
 - Projeyi çalıştırmak için:
+- Veritabanını Query1.sql sorgusu ile oluşturun.
 - `cd assigment1` komutu ile assigment1 klasörüne gidin.
 - `npm install` komutu ile gerekli paketleri yükleyin.
-- [mysql.js](./assigment1/helper/mysql.js) dosyasındaki password parametresine MySQL şifrenizi ekleyerek değiştirin.
+- [mysql.js](./assigment1/helper/mysql.js) dosyasındaki password parametresine MySQL şifrenizi ekleyerek değiştirin ve const password = require("./password"); parametresini silin.
 - `nodemon app.js` komutu ile projeyi başlatın.
 - Tarayıcıda `http://localhost:3000` adresine gidin.
 - Öğrenci ekleme, silme ve listeleme işlemlerini gerçekleştirebilirsiniz.
