@@ -31,9 +31,10 @@ app.post("/students/add/:name/:age/:midterm_grade/:final_grade", (req, res) => {
   });
 });
 
+// son eklenen öğrencinin id'sini almak için
 app.get("/students/add/:name/:age/:midterm_grade/:final_grade", (req, res) => {
-  dbConnection.query("INSERT INTO students (name, age, midterm_grade, final_grade) VALUES (?, ?, ?, ?)",
-  [req.params.name, req.params.age, req.params.midterm_grade, req.params.final_grade], (err, results, fields) => {
+  dbConnection.query("SELECT * FROM students WHERE id = (SELECT MAX(id) FROM students)",
+  (err, results, fields) => {
     if (err) {
       console.log("Database query error: ", err);
     } else {
