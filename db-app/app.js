@@ -6,14 +6,14 @@ const app = express();
 
 //check db connection
 // Edit -> Toggle Block Comment
-/* dbConnection.query("INSERT INTO students (name, midterm_grade, final_grade) VALUES ('Ayşe', 45, 80)",
+dbConnection.query("INSERT INTO students (name, midterm_grade, final_grade) VALUES ('Ayşe', 45, 80)",
  (err, results, fields) => {
     if (err) {
       console.log("Database query error: ", err);
     } else {
-      console.log("Data inserted successfully");
+      console.log("Data connected successfully");
     }
-}); */
+}); 
 
 app.get("/students", (req, res) => {
   dbConnection.query("SELECT * FROM students", (err, results, fields) => {
@@ -43,6 +43,6 @@ app.get("/students/:id", (req, res) => {
   );
 });
 
-app.listen(3000, () => {
+app.listen(2000, () => {
   console.log("Server is running on port 3000");
 });
